@@ -1,0 +1,15 @@
+# 1. 忽略虚拟环境 (这玩意儿巨大，且每台电脑不一样)
+.venv/
+venv/
+env/
+
+# 2. 忽略 Python 编译缓存 (垃圾文件)
+__pycache__/
+*.pyc
+
+# 3. 忽略各种环境配置和密钥文件 (安全第一！)
+.env
+*.json
+!claude_desktop_config.json
+# 如果你有私密的笔记，也可以忽略
+NOTES.txt
