@@ -13,7 +13,7 @@ mcp = FastMCP("WeatherStation")
 # 2. 定义工具：这就是给 AI 的“菜单”
 # 只要加上 @mcp.tool()，AI 就能看见这个函数
 @mcp.tool()
-async def get_weather(city: str) -> str: # <-- 核心变化：必须是 async def
+async def get_weather(city: str) -> str: 
     """
     查询指定城市的天气状况，数据来自 OpenWeatherMap 实时 API。
     """
@@ -50,7 +50,7 @@ async def get_weather(city: str) -> str: # <-- 核心变化：必须是 async de
     except Exception as e:
         return f"【网络错误】: 联网失败。错误信息: {e}"
 
-# 3. 开工！
+# 3. 开工！netstat -ano | findstr :8000
 if __name__ == "__main__":
  
-    mcp.run(log_level="ERROR")
+    mcp.run(transport='sse', port=8000)
