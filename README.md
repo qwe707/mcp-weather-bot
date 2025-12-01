@@ -20,3 +20,6 @@ $env:OPENWEATHER_API_KEY="你的密钥"
 3.运行，查查把，为你心爱的人看看对方城市的天气
 python weather.py
 非常简单，做这个只是为了让自己能熟悉mcp了解一下，明天看看再进阶一下，再学习一下sse
+
+
+4.学习完sse了，接入了cheerstudio，看了魔搭社区的一个例子，用的qwen和deepseek-v3模型，更新一下。
